@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ChatJS</title>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/fontawesome.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid h-100">
+      <div class="row justify-content-center h-100">
+        <div class="col-md-8 col-xl-6 chat">
+          <div class="card">
+            <div class="card-header chat-header"></div>
+            <div class="card-body chat-body chat-display"></div>
+            <div class="card-footer">
+              <form class="input-group">
+                <input
+                  type="text"
+                  name="message-input"
+                  id="message-input"
+                  class="form-control"
+                  autocomplete="off"
+                  placeholder="Type your message..."
+                  required
+                />
+                <button class="send-btn">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4 chat">
+          <div class="users-display container"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

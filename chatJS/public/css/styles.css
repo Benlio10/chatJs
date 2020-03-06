@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+.app {
+  height: 100%;
+}
+
+body,
+html {
+  -webkit-font-smoothing: antialiased;
+  background: #7f7fd5;
+  background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  max-width: 100%;
+}
+
+body,
+input,
+button {
+  font-family: Roboto, sans-serif;
+}
+
+.current-user {
+  color: gray;
+}
+
+.chat {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card {
+  height: 500px;
+  border-radius: 15px !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.chat-header {
+  position: relative;
+}
+
+.chat-body {
+  width: 100%;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.message-container {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  border-radius: 25px;
+  background-color: #78e08f;
+  padding: 10px;
+  position: relative;
+  overflow: auto;
+}
+
+.message-container-send {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  border-radius: 25px;
+  background-color: #82ccdd;
+  padding: 10px;
+  position: relative;
+  overflow: auto;
+}
+
+/* height: 40px;
+  width: 40px; */
+:root {
+  --avatar-size: 40px;
+}
+
+.circle {
+  background-color: #ccc;
+  border-radius: 50%;
+  height: 40px;
+  text-align: center;
+  width: 40px;
+}
+
+.initials {
+  font-size: calc(var(--avatar-size) / 2); /* 50% of parent */
+  line-height: 1;
+  position: relative;
+  top: calc(var(--avatar-size) / 4); /* 25% of parent */
+}
+
+.card-footer {
+  border-radius: 0 0 15px 15px !important;
+  border-top: 0 !important;
+}
+
+#message-input {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border: 0 !important;
+  color: white !important;
+  height: 60px !important;
+  overflow-y: auto;
+}
+
+#message-input:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+
+.send-btn {
+  border-radius: 0 15px 15px 0 !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border: 0 !important;
+  color: white !important;
+  cursor: pointer;
+}
